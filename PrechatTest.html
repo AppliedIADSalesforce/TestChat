@@ -4,6 +4,16 @@
 
 <h1>Custom Prechat Test</h1>
 
+  <form action="/PrechatTest.html">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="lname">Email:</label>
+  <input type="text" id="email" name="lname"><br><br>
+  <input type="submit" value="Submit">
+  </form>
+	
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
@@ -41,12 +51,15 @@
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
 
-		const queryString = window.location.search;
-		const urlParams = new URLSearchParams(queryString);
-		
-		console.log('Qs ' + urlParams.get('firstname'));
-		console.log('Qs ' + urlParams.get('lastname'));
-		console.log('Qs ' + urlParams.get('email'));
+		var input = document.getElementById("fname");
+		var inputValue = input.value;
+		console.log(inputValue);
+		input = document.getElementById("lname");
+		inputValue = input.value;
+		console.log(inputValue);
+		input = document.getElementById("email");
+		inputValue = input.value;
+		console.log(inputValue);
 		
 		embedded_svc.settings.extraPrechatFormDetails = [
 			{
