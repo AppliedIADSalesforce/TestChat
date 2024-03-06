@@ -42,7 +42,11 @@
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
 
 		const queryString = window.location.search;
-		console.log('Qs ' + queryString);
+		const urlParams = new URLSearchParams(queryString);
+		
+		console.log('Qs ' + urlParams.get('FirstName'));
+		console.log('Qs ' + urlParams.get('LastName'));
+		console.log('Qs ' + urlParams.get('Email'));
 		
 		embedded_svc.settings.extraPrechatFormDetails = [
 			{
