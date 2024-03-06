@@ -4,7 +4,7 @@
 
 <h1>Custom Prechat Test</h1>
 
-  <form action="https://htmlpreview.github.io/?https://github.com/AppliedIADSalesforce/TestChat/blob/main/PrechatTest.html">
+  <form action="javascript:handleClick()">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
   <label for="lname">Last name:</label>
@@ -26,6 +26,7 @@
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
+	function handleClick() {
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
@@ -123,7 +124,7 @@
 			}
 		);
 	};
-
+	};
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
 		s.setAttribute('src', 'https://appliedsystems--devprob.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
