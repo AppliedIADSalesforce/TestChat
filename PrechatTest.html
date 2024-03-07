@@ -3,19 +3,6 @@
 <body>
 
 <h1>Custom Prechat Test</h1>
-
-  <!-- <form action="https://htmlpreview.github.io/?https://github.com/AppliedIADSalesforce/TestChat/blob/main/FormChat.html"> -->
-  <form method="get">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <label for="lname">Email:</label>
-  <input type="text" id="email" name="email"><br><br>
-  <label for="lang">Language:</label>
-  <input type="text" id="lang" name="lang"><br><br>
-  <input type="submit" value="Submit">
-  </form>
 	
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
@@ -72,16 +59,6 @@
                 //   Language__c: "English"};
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-
-		var input = document.getElementById("fname");
-		var inputValue = input.value;
-		console.log(inputValue);
-		input = document.getElementById("lname");
-		inputValue = input.value;
-		console.log(inputValue);
-		input = document.getElementById("email");
-		inputValue = input.value;
-		console.log(inputValue);
 		
 		embedded_svc.settings.extraPrechatFormDetails = [
 			{
