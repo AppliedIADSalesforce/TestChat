@@ -30,6 +30,14 @@
 
 	const queryString = window.location.search;
 	console.log(queryString);
+	const urlParams = new URLSearchParams(queryString);
+
+	const fName = urlParams.get('fname');
+	console.log(fname);
+
+	const lName = urlParams.get('lname');
+	console.log(lname);
+
 	
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
