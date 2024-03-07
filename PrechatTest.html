@@ -10,7 +10,9 @@
   <label for="lname">Last name:</label>
   <input type="text" id="lname" name="lname"><br><br>
   <label for="lname">Email:</label>
-  <input type="text" id="email" name="lname"><br><br>
+  <input type="text" id="email" name="email"><br><br>
+  <label for="lang">Language:</label>
+  <input type="text" id="lang" name="lang"><br><br>
   <input type="submit" value="Submit">
   </form>
 	
@@ -40,8 +42,10 @@
 
 	const eMail = urlParams.get('email');
 	console.log('Email: ' + eMail);
-	
 
+	const uLanguage = urlParams.get('lang');
+	console.log('Language: ' + uLanguage);
+	
 	
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
@@ -97,6 +101,12 @@
     			"value":eMail,
     			"displayToAgent":true,
 			"transcriptFields": ["Email__c"]
+			},
+			{
+    			"label":"Language",
+    			"value":uLanguage,
+    			"displayToAgent":true,
+			"transcriptFields": ["User_Language__c"]
 			}
 		]; 
 		
