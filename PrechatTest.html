@@ -36,7 +36,11 @@
 	console.log('First Name: ' + fName);
 
 	const lName = urlParams.get('lname');
-	console.log('Lastt Name: ' + lName);
+	console.log('Last Name: ' + lName);
+
+	const eMail = urlParams.get('email');
+	console.log('Email: ' + eMail);
+	
 
 	
 	var initESW = function(gslbBaseURL) {
@@ -78,19 +82,19 @@
 			{
     			"label":"First Name",
     			"name":"FirstName",
-    			"value":"Jane",
+    			"value":fName,
     			"displayToAgent":true,
 			"transcriptFields": ["FirstName__c"]
 			},
 			{
     			"label":"Last Name",
-    			"value":"Doe",
+    			"value":lName,
     			"displayToAgent":true,
 			"transcriptFields": ["LastName__c"]
 			},
 			{
     			"label":"Email",
-    			"value":"jane.doe@salesforce.com",
+    			"value":eMail,
     			"displayToAgent":true,
 			"transcriptFields": ["Email__c"]
 			}
