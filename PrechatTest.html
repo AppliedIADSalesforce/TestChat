@@ -111,6 +111,32 @@
 			"transcriptFields": ["User_Language__c"]
 			}
 		]; 
+
+		embedded_svc.settings.extraPrechatInfo = [{
+    			"entityName":"Contact",
+    			"showOnCreate":true,
+    			"linkToEntityName":"",
+    			"saveToTranscript":"ContactId",
+    			"entityFieldMaps": [{
+        			"isExactMatch":true,
+        			"fieldName":"FirstName",
+        			"doCreate":true,
+        			"doFind":true,
+        			"label":"First Name"
+    				}, {
+        			"isExactMatch":true,
+        			"fieldName":"LastName",
+        			"doCreate":true,
+        			"doFind":true,
+        			"label":"Last Name"
+    				}, {
+        			"isExactMatch":true,
+        			"fieldName":"Email",
+        			"doCreate":true,
+        			"doFind":true,
+        			"label":"Email"
+    			}]
+		}];
 		
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
