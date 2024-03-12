@@ -23,6 +23,71 @@
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
 		outline: 1px solid #005290;
 	}
+
+	/* Mini Card stylying START */
+.mini-card[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
+    line-height: .5 !important;
+}
+
+.mini-card .containerDiv.slds-m-vertical--small {
+    box-shadow: 0 0 8px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    border: 1px solid #262860;
+}
+
+.minicard-title.title.slds-media__body {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+
+img.titleIcon, .minicard-header[ebcm-einsteinBotMiniCard_einsteinBotMiniCard] .minicard-action[ebcm-einsteinBotMiniCard_einsteinBotMiniCard] .expandIconImg[ebcm-einsteinBotMiniCard_einsteinBotMiniCard] {
+    filter: brightness(0) saturate(100%) invert(14%) sepia(24%) saturate(4637%) hue-rotate(200deg) brightness(90%) contrast(92%);
+}
+
+.minicard-icon.image.slds-media__figure {
+    visibility: hidden;
+    width: 0px;
+    margin: 2px;
+}
+
+.articleLink-Container {
+    display: flex;
+    justify-content: center;
+    background: #262860;
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 8%);
+    border-radius: 23.5px;
+}
+
+.articleLink-Container > a {
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+p.minicard-title-text > lightning-formatted-rich-text.slds-rich-text-editor__output {
+    line-height: 1.0;
+    font-family: 'Arial';
+    font-size: 15px;
+}
+
+.detailDiv[ebcm-einsteinBotMiniCard_einsteinBotMiniCard] .detail[ebcm-einsteinBotMiniCard_einsteinBotMiniCard], .minicard-header[ebcm-einsteinBotMiniCard_einsteinBotMiniCard] .minicard-title[ebcm-einsteinBotMiniCard_einsteinBotMiniCard] {
+    text-align: left;    
+}
+
+.detailDiv[ebcm-einsteinBotMiniCard_einsteinBotMiniCard] .data[ebcm-einsteinBotMiniCard_einsteinBotMiniCard] {
+    font-family: 'Arial';
+}
+
+.chatContent .chat-content.agent[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
+    margin-left: 35px;
+}
+
+.minicard-description .detailDiv[ebcm-einsteinBotMiniCard_einsteinBotMiniCard].data[ebcm-einsteinBotMiniCard_einsteinBotMiniCard] {
+    font-family: 'Arial';
+}
+
+/* Mini Card stylying END */
 </style>
 
 	
