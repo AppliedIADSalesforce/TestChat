@@ -30,7 +30,7 @@
 <script type='text/javascript'>
 
 	const queryString = window.location.search;
-	console.log('QUERY STRING: ' & queryString);
+	//console.log('QUERY STRING: ' & queryString);
 	const urlParams = new URLSearchParams(queryString);
 
 	const fName = urlParams.get('fname');
@@ -46,7 +46,7 @@
 	console.log('Language: ' + uLanguage);
 	
 
-	/* var input = document.getElementById("fname");
+	var input = document.getElementById("fname");
 	input.value = fName;
 		
 	input = document.getElementById("lname");
@@ -56,7 +56,7 @@
 	input.value = eMail;
 
 	input = document.getElementById("lang");
-	input.value = uLanguage; */
+	input.value = uLanguage;
 		
 	
 	var initESW = function(gslbBaseURL) {
